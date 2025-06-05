@@ -5,10 +5,28 @@ import { ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: 'Audience_Rating_Prediction',
+      desc: 'MLPRegressor with 85% accuracy for Audience_Rating_Prediction',
+      tech: ['Python', 'Scikit-learn', 'Pandas'],
+      github: 'https://github.com/ROOSSOp2452/Audience_Rating_Prediction'
+    },
+    {
+      title: 'FACE_RECOGNITION-_USING_KFOLD',
+      desc: 'facial detection to verify faces of people',
+      tech: ['Python', 'Scikit-learn', 'Pandas','CNN'],
+      github: 'https://github.com/ROOSSOp2452/FACE_RECOGNITION-_USING_KFOLD'
+    },
+    {
       title: 'Stock Market LSTM',
       desc: 'LSTM networks for stock prediction with 30% accuracy improvement',
       tech: ['Python', 'TensorFlow', 'Keras'],
       github: 'https://github.com/ROOSSOp2452/Stock_Market_anlaysis_using_LSTM'
+    },
+    {
+      title: 'PowerBi_Dashboards',
+      desc: 'Created varoius dashbords usong Powerbi to visulize',
+      tech: ['PowerBI'],
+      github: 'https://github.com/ROOSSOp2452/PowerBi_Dashboards'
     },
     {
       title: 'Fraud Detection',
@@ -27,7 +45,7 @@ const Projects = () => {
       desc: 'ML model for diabetes detection with 76.62% KNN accuracy',
       tech: ['Python', 'Scikit-learn', 'KNN'],
       github: 'https://github.com/ROOSSOp2452/Diabetes_Prediction_using_KNN'
-    }
+    },
   ];
 
   return (
