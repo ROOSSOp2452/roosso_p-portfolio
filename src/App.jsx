@@ -44,13 +44,13 @@ const App = () => {
             {/* Middle Column */}
             <div className="lg:col-span-1 space-y-8">
               <Skills />
-              <CommunicationLinks />
+              <Education />
             </div>
             
             {/* Right Column */}
             <div className="lg:col-span-1 space-y-8">
               <Projects />
-              <Education />
+              <CommunicationLinks />
             </div>
           </div>
         </main>
