@@ -10,6 +10,21 @@ const Experience = () => {
           <div className="space-y-4">
             <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700 hover:border-cyan-500 transition-all">
               <div className="flex justify-between items-start mb-2">
+                <h4 className="text-cyan-300 font-bold">Python (Django) Developer Intern</h4>
+                <span className="text-green-400 text-sm bg-green-900/30 px-2 py-1 rounded">Current</span>
+              </div>
+              <p className="text-purple-400 text-sm mb-2">Thaagam Foundation</p>
+              <p className="text-gray-400 text-sm mb-3">Jun 2025 - Present</p>
+              <ul className="text-gray-300 text-xs space-y-1">
+                <li>• Involved in finetuning multiple generative models</li>
+                <li>• Music generation model for melody and rhythm control</li>
+                <li>• Video generation model for creative visual content synthesis</li>
+                <li>• Lip-sync model fine-tuning for better temporal and phoneme alignment in speech-video synthesis</li>
+              </ul>
+            </div>
+            
+            <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700 hover:border-cyan-500 transition-all">
+              <div className="flex justify-between items-start mb-2">
                 <h4 className="text-cyan-300 font-bold">Math AI Trainer</h4>
                 <span className="text-purple-400 text-sm bg-purple-900/30 px-2 py-1 rounded">Freelance</span>
               </div>
@@ -30,6 +45,8 @@ const Experience = () => {
                 <span className="text-cyan-300">• Machine Learning Models</span>
                 <span className="text-cyan-300">• API Development</span>
                 <span className="text-cyan-300">• Database Management</span>
+                <span className="text-cyan-300">• Django Framework</span>
+                <span className="text-cyan-300">• Generative AI Models</span>
               </div>
             </div>
           </div>

@@ -1,12 +1,15 @@
-// src/components/CommunicationLinks.jsx
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const CommunicationLinks = () => {
+  // Google Drive direct download link for your resume
+  const resumeUrl = "https://drive.google.com/uc?export=download&id=1aF0S7vNqv9EYQZagrxoSavhV4V9c3twD";
+  
   const links = [
     { icon: Linkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/roosso-p-71b759279/', color: 'text-blue-400 hover:text-blue-300' },
     { icon: Github, label: 'GitHub', url: 'https://github.com/ROOSSOp2452', color: 'text-gray-400 hover:text-gray-300' },
-    { icon: Mail, label: 'Email', url: 'mailto:roossop24@gmail.com', color: 'text-purple-400 hover:text-purple-300' }
+    { icon: Mail, label: 'Email', url: 'mailto:roossop24@gmail.com', color: 'text-purple-400 hover:text-purple-300' },
+    { icon: Download, label: 'Resume', url: resumeUrl, color: 'text-green-400 hover:text-green-300', download: true }
   ];
 
   return (
@@ -19,7 +22,7 @@ const CommunicationLinks = () => {
               <a
                 key={index}
                 href={link.url}
-                target="_blank"
+                target={link.download ? "_blank" : "_blank"}
                 rel="noopener noreferrer"
                 className={`group/link transition-all duration-300 ${link.color}`}
               >

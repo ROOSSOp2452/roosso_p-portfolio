@@ -11,7 +11,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen bg-black relative overflow-hidden scroll-smooth">
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-cyan-500/10 to-purple-500/10 animate-pulse"></div>
@@ -34,22 +34,30 @@ const App = () => {
         <Header />
         
         <main className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Column */}
-            <div className="lg:col-span-1 space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* Left Column - Profile & Experience */}
+            <div className="lg:col-span-1 space-y-6 lg:space-y-8 order-1 lg:order-1">
               <Profile />
               <Experience />
             </div>
             
-            {/* Middle Column */}
-            <div className="lg:col-span-1 space-y-8">
+            {/* Middle Column - Skills & Education */}
+            <div className="lg:col-span-1 space-y-6 lg:space-y-8 order-2 lg:order-2">
               <Skills />
               <Education />
             </div>
             
-            {/* Right Column */}
-            <div className="lg:col-span-1 space-y-8">
+            {/* Right Column - Projects & Communication */}
+            <div className="lg:col-span-1 space-y-6 lg:space-y-8 order-3 lg:order-3">
               <Projects />
+              {/* Communication Links - Hidden on mobile, shown on desktop */}
+              <div className="hidden lg:block">
+                <CommunicationLinks />
+              </div>
+            </div>
+            
+            {/* Communication Links - Last on Mobile Only */}
+            <div className="lg:hidden order-4 col-span-1">
               <CommunicationLinks />
             </div>
           </div>
