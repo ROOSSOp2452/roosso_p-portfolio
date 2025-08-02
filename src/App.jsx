@@ -18,7 +18,7 @@ const App = () => {
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-bounce slow-bounce"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
       </div>
-      
+     
       {/* Grid Pattern Overlay */}
       <div className="absolute inset-0 opacity-10">
         <div className="w-full h-full" style={{
@@ -29,7 +29,7 @@ const App = () => {
           backgroundSize: '50px 50px'
         }}></div>
       </div>
-      
+     
       <div className="relative z-10">
         <Header />
         
@@ -41,15 +41,15 @@ const App = () => {
               <Experience />
             </div>
             
-            {/* Middle Column - Skills & Education */}
+            {/* Middle Column - Skills & Projects */}
             <div className="lg:col-span-1 space-y-6 lg:space-y-8 order-2 lg:order-2">
               <Skills />
-              <Education />
+              <Projects />
             </div>
             
-            {/* Right Column - Projects & Communication */}
+            {/* Right Column - Education & Communication */}
             <div className="lg:col-span-1 space-y-6 lg:space-y-8 order-3 lg:order-3">
-              <Projects />
+              <Education />
               {/* Communication Links - Hidden on mobile, shown on desktop */}
               <div className="hidden lg:block">
                 <CommunicationLinks />

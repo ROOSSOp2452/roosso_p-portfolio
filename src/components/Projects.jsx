@@ -51,27 +51,27 @@ const Projects = () => {
   return (
     <div className="cyber-card group hover:scale-105 transition-all duration-300">
       <div className="cyber-border cyber-border-purple">
-        <div className="p-6">
-          <h3 className="text-2xl font-bold text-purple-400 mb-6 cyber-glow">PROJECTS</h3>
-          <div className="space-y-4 max-h-80 overflow-y-auto custom-scrollbar">
+        <div className="p-8">
+          <h3 className="text-2xl font-bold text-purple-400 mb-8 cyber-glow">PROJECTS</h3>
+          <div className="space-y-6 max-h-[500px] overflow-y-auto custom-scrollbar">
             {projects.map((project, index) => (
               <a 
                 key={index} 
                 href={project.github} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="block bg-gray-900/50 p-4 rounded-lg border border-gray-700 hover:border-purple-500 transition-all group/project cursor-pointer"
+                className="block bg-gray-900/50 p-6 rounded-lg border border-gray-700 hover:border-purple-500 transition-all group/project cursor-pointer"
               >
-                <div className="flex justify-between items-start mb-2">
-                  <h4 className="text-cyan-300 font-bold text-sm group-hover/project:text-cyan-200">
+                <div className="flex justify-between items-start mb-3">
+                  <h4 className="text-cyan-300 font-bold text-base group-hover/project:text-cyan-200">
                     {project.title}
                   </h4>
-                  <ExternalLink className="w-4 h-4 text-purple-400 opacity-0 group-hover/project:opacity-100 transition-opacity" />
+                  <ExternalLink className="w-5 h-5 text-purple-400 opacity-0 group-hover/project:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-400 text-xs mb-3 leading-relaxed">{project.desc}</p>
-                <div className="flex flex-wrap gap-1">
+                <p className="text-gray-400 text-sm mb-4 leading-relaxed">{project.desc}</p>
+                <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="px-2 py-1 bg-purple-900/30 text-purple-300 text-xs rounded border border-purple-500/30">
+                    <span key={i} className="px-3 py-1.5 bg-purple-900/30 text-purple-300 text-sm rounded border border-purple-500/30">
                       {tech}
                     </span>
                   ))}
